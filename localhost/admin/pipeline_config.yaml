@@ -1,6 +1,18 @@
 server_name: localhost
 user_name: admin
 repositories:
+  cob_driver:
+    ros_distro: [groovy]
+    robots: null
+    jobs: []
+    poll: true
+    dependencies: {}
+    prio_ubuntu_distro: oneiric
+    regular_matrix: {}
+    prio_arch: i386
+    type: git
+    url: git@github.com:ipa-fmw/cob_driver.git
+    version: groovy_dev
   cob_common:
     ros_distro: [groovy]
     robots: null
