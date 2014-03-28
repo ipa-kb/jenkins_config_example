@@ -1,8 +1,8 @@
 server_name: localhost
 user_name: admin
 repositories:
-  cob_common__hydro:
-    ros_distro: [hydro]
+  ipa325_ur5:
+    ros_distro: [groovy]
     robots: null
     jobs: []
     poll: true
@@ -10,32 +10,8 @@ repositories:
     prio_ubuntu_distro: precise
     regular_matrix: {}
     prio_arch: amd64
-    type: git
-    url: git@github.com:ipa320/cob_common.git
-    version: hydro_dev
-  cob_driver:
-    ros_distro: [groovy]
-    robots: null
-    jobs: []
-    poll: true
-    dependencies: {}
-    prio_ubuntu_distro: oneiric
-    regular_matrix: {}
-    prio_arch: i386
-    type: git
-    url: git@github.com:ipa-fmw/cob_driver.git
-    version: groovy_dev
-  cob_common:
-    ros_distro: [groovy]
-    robots: null
-    jobs: []
-    poll: true
-    dependencies: {}
-    prio_ubuntu_distro: oneiric
-    regular_matrix: {}
-    prio_arch: amd64
-    type: git
-    url: git@github.com:ipa320/cob_common.git
+    type: hg
+    url: ssh://jenkinsuser@laotse://var/repos/hg/repos/ipa325_ur5
     version: groovy_dev
 email: kevin.broeselge@ipa.fraunhofer.de
 committer_email_enabled: false
